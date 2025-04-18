@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition Results</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🥗 Your Nutrition Results</h1>
+      <div id="results" class="hidden">
+        <h2>Hello, <span id="displayName"></span> 👋</h2>
+        <p><strong>BMR:</strong> <span id="bmr"></span> kcal/day</p>
+        <p>
+          <strong>Calories Needed:</strong> <span id="calories"></span> kcal/day
+        </p>
+        <p><strong>Protein:</strong> <span id="protein"></span> g</p>
+        <p><strong>Fats:</strong> <span id="fats"></span> g</p>
+        <p><strong>Carbs:</strong> <span id="carbs"></span> g</p>
+
+        <h3>🍽 Suggested Foods</h3>
+        <ul id="foodList"></ul>
+
+        <button id="backButton">Back to Calculator</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

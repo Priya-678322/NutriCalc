@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🥗 Nutrition Calculator</h1>
+      <form id="nutritionForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="number" id="age" placeholder="Age" required />
+        <select id="gender" required>
+          <option value="">Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <input type="number" id="height" placeholder="Height (cm)" required />
+        <input type="number" id="weight" placeholder="Weight (kg)" required />
+        <select id="activity" required>
+          <option value="">Activity Level</option>
+          <option value="1.2">Sedentary</option>
+          <option value="1.375">Lightly active</option>
+          <option value="1.55">Moderately active</option>
+          <option value="1.725">Very active</option>
+          <option value="1.9">Super active</option>
+        </select>
+        <button type="submit">Calculate</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

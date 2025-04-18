@@ -1,0 +1,152 @@
+/* General styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to right,
+    #74ebd5,
+    #acb6e5
+  ); /* Beautiful gradient */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for page content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  color: #1976d2;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #1976d2;
+}
+
+/* Input and select fields */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #bbdefb;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #42a5f5;
+  outline: none;
+  box-shadow: 0 0 8px rgba(66, 165, 245, 0.5);
+}
+
+/* Button with hover animation */
+button {
+  background: #1976d2;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: #0d47a1;
+  box-shadow: 0 0 12px rgba(13, 71, 161, 0.6);
+}
+
+/* Results section */
+#results {
+  background: #e3f2fd;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+  animation: fadeIn 0.8s ease-in;
+  text-align: left;
+}
+
+#results ul {
+  margin-top: 10px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Back Button */
+#backButton {
+  background: #1976d2;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+#backButton:hover {
+  background: #0d47a1;
+}
+
+/* Background image */
+body {
+  background-image: url("images/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  #backButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
